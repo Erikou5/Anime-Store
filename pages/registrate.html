@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="head">
+
+        <div class="logo">
+            <a href="../index.html"><img src="../img/anime/pokemon.png" alt="pokebola"></a>
+            <a href="../index.html">Laugh Tale's <br> Store</a>
+        </div>
+        <div>
+            <nav>
+                <ul class="list">
+                    <li><a href="../pages/figuras.html">Figuras</a></li>
+                    <li><a href="../pages/consolasjuegos.html">Juegos y Consolas</a></li>
+                    <li><a href="../pages/registrate.html">Registrate</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="registMain">
+        <section class="titulo">
+            <h1>¡Registrate!</h1>
+        </section>
+        <section class="regisText">
+            <h2>Consegui beneficios y enterate de las ultimas novedades:</h2>
+        </section>
+        <section class="registro">
+            <div class="datosPer">
+                <h3>Datos de usuario:</h3>
+                <form action="" method="" enctype="">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </div>
+                    <div>
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="nacimiento" name="nacimiento">
+                    </div>
+                </form>
+            </div>
+            <div class="datosPer2">
+                <form action="" method="" enctype="">
+                    <div class="gen">
+                        <p>Genero:</p>
+                        <div>
+                            <label for="masculino">Masculino</label>
+                            <label for="femenino">Femenino</label>
+                            <label for="otros">Otros</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="masculino" name="genero">
+                            <input type="radio" id="femenino" name="genero">
+                            <input type="radio" id="otros" name="genero">
+                        </div>
+                    </div>
+                    <div class="pais">
+                        <p>Pais:</p>
+                        <select name="" id="">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Paraguay">Paraguay</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="usuario">
+                <form action="" method="" enctype="">
+                    <div class="user">
+                        <label for="username">Nombre de usuario:</label>
+                        <label for="mail">Mail</label>
+                        <label for="repeatmail">Repite tu mail:</label>
+                        <label for="contrasenia">Constraseña:</label>
+                        <label for="repeatpassword">Repite tu contraseña:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="username" name="username">
+                        <input type="mail" id="mail" name="mail">
+                        <input type="mail" id="repeatmail" name="repeatmail">
+                        <input type="password" id="contrasenia" name="contrasenia">
+                        <input type="password" id="repeatpassword" name="repeatpassword">
+                    </div>
+                </form>
+            </div>
+            <div class="envio">
+                <h4>Direccion de envio (se puede completar luego):</h4>
+                <form action="" method="" enctype="">
+                    <div class="enviodat1">
+                        <label for="provincia">Provincia:</label>
+                        <select name="" id="provincia">
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Santiago de Chile">Santiago de Chile</option>
+                            <option value="Montevideo">Montevideo</option>
+                            <option value="Asuncion">Asunción</option>
+                        </select>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                        <label for="calle">Calle de envio:</label>
+                        <input type="text" id="calle" name="calle">
+                    </div>
+                    <div>
+                        <label for="aclaracion">Aclaraciónes:</label>
+                        <input type="text" id="aclaracion" name="aclaraciones">
+                        <label for="zip">Codigo postal:</label>
+                        <input type="text" id="zip" name="zip" maxlength="6">
+                        <label for="telefono">Numero de contacto:</label>
+                        <input type="text" id="telefono">
+                    </div>
+                </form>
+            </div>
+            <div class="pref">
+                <h4>Porfavor seleccione sus preferencias:</h4>
+                <div class="checkPref">
+                    <div>
+                        <form action="" method="" enctype="">
+                            <label for="nintendoPref">Nintendo</label>
+                            <label for="sonyPref">Sony</label>
+                            <label for="xboxPref">Xbox</label>
+                            <label for="figurasPref">Figuras</label>
+                            <label for="animePref">Anime</label>
+                            <label for="comicPref">Comic</label>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="" method="" enctype="">
+                            <input type="checkbox" id="nintendoPref" name="nintendoPref">
+                            <input type="checkbox" id="sonyPref" name="sonyPref">
+                            <input type="checkbox" id="xboxPref" name="xboxPref">
+                            <input type="checkbox" id="figurasPref" name="figurasPref">
+                            <input type="checkbox" id="animePref" name="animePref">
+                            <input type="checkbox" id="comicPref" name="comicPref">
+                        </form>
+                    </div>
+                </div>
+                <div class="yesornot">
+                    <p>Desea recivir novedades via mail?</p>
+                    <label for="yesnews">Si</label>
+                    <input type="radio" id="yesnews" name="news">
+                    <label for="nonews">No</label>
+                    <input type="radio" id="nonews" name="news">
+                </div>
+                </form>
+            </div>
+            <div class="botonRegistro">
+                <button type="submit" value="crear cuenta">Crear cuenta!</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerLogo">
+            <img src="../img/anime/ghost.png" alt="imagen anime">
+            <div class="textoLogo">
+                <h2>¡Muchas gracias por visitarnos!</h2>
+                <a href="#head">Vuelve arriba!</a>
+            </div>
+        </div>
+        <div class="redesSection">
+            <h3>Nuestras Redes:</h3>
+            <div class="redes">
+                <div class="redesText">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </div>
+                <div class="redesImg">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/redes/instagram.png"
+                            alt="logo instagram"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../img/redes/facebook.png"
+                            alt="logo facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../img/redes/gorjeo.png"
+                            alt="logo twitter"></a>
+                </div>
+            </div>
+            <p>Correo electronico: Animestore@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
