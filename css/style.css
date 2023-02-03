@@ -183,14 +183,14 @@ body{
     border-radius: 2%;
 }
 
-/*---------- NOVEDADES/PRODUCTOS -----------*/
+/*---------- NOVEDADES/FICHAS -----------*/
 
 .novedades{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
-.subTitulo{
+.novedadesTitulo{
     background-color: black;
     color: whitesmoke;
     font-style: italic;
@@ -261,6 +261,17 @@ body{
     margin: 0px;
     font-size: 50px;
 }
+.subTitulo{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+.subTitulo h2{
+    color: whitesmoke;
+    font-style: italic;
+}
 .navProducts{
     background-color: rgba(0, 0, 0, 0.85);
     margin-bottom: 10px;
@@ -275,14 +286,17 @@ body{
 .logoNav img{
     object-fit: cover;
 }
-.accordionSize{
+.accordionAtributos{
     width: 300px;
+    height: 150px;
     margin-left: 3px;
+    position: sticky;
+    top:80px;
 }
 .accordion-button{
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0.95);
     color: white;
-    border: black solid 1px;
+    border: rgba(0, 0, 0, 0.85) solid 1px;
 }
 .accordion-body li{
     margin-bottom: 5px;
@@ -294,6 +308,26 @@ body{
 .productContainer{
     display:flex ;
     justify-content: space-between;
+}
+.goHead{
+    background-color: rgba(65, 105, 225, 0.8);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+}
+.goHead:hover{
+    opacity: 0.8;
+}
+.goHead img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .productos{
     width: 1250px;
@@ -429,7 +463,7 @@ body{
     border-bottom: 1px solid grey;
     grid-auto-rows: auto auto 50px;
     grid-template-columns: 0.5fr 0.6fr 0.2fr;
-    gap: 15px 10px;
+    gap: 15px 5px;
     grid-template-areas:
     "datos usuario pref"
     "datos2 envio pref"
@@ -496,7 +530,7 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .gen div:nth-child(even){
     padding-left: 10px;
@@ -584,6 +618,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.pref h4{
+    margin-bottom: 40px;
 }
 .checkPref{
     display: flex;
@@ -728,6 +765,11 @@ footer{
         height: 450px;
         margin: 20px 10px;
     }
+    /* ---- REGISTRO ---- */
+    .registro{
+        padding: 20px 0px;
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width:1150px){
@@ -755,6 +797,24 @@ footer{
     .categoriasFichas div h3{
         font-size: 40px;
     }
+    /* ---- REGISTRO ---- */
+    .registro{
+        margin: 30px;
+        grid-auto-rows: auto auto auto;
+        column-gap: 30px;
+    }
+    .yesornot input{
+        margin-right: 5px;
+    }
+    .yesornot label{
+        margin-right: 5px;
+    }
+    .botonRegistro button{
+        padding: 8px;
+    }
+    .pref h4{
+        margin-bottom: 20px;
+    }
     /* ----FOOTER--- */
     .textoLogo{
         font-size: 18px;
@@ -768,6 +828,42 @@ footer{
     }
     .redesSection{
         padding-right: 10px ;
+    }
+}
+@media screen and (max-width:950px){
+    /* ---- REGISTRO ---- */
+    .registro{
+        grid-auto-rows: auto auto auto;
+        grid-template-columns: 0.5fr 0.6fr 0.3fr;
+        gap: 20px;
+        grid-template-areas:
+        "datos usuario usuario"
+        "datos2 envio envio"
+        "pref pref registrate" 
+    }
+    .usuario{
+        justify-content: center;
+    }
+    .envio form{
+        justify-content: center;
+    }
+    .pref{
+        flex-direction: initial;
+        padding-top: 20px;
+        justify-content: flex-start;
+    }
+    .yesornot{
+        width: 200px;
+        margin-left: 50px;
+    }
+    .checkContainePref{
+        width: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .botonRegistro{
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -822,7 +918,7 @@ footer{
     .tituloPixel{
         font-size: 39px;
     }
-    .subTitulo h2{
+    .novedadesTitulo h2{
         font-size: 32px;
     }
     /* ----CATEGORIAS FICHAS---- */
@@ -852,6 +948,36 @@ footer{
     }
     .titulo h1{
         font-size: 35px;
+    }
+    /* ---- REGISTRO ---- */
+    .registro{
+        grid-template-columns: auto auto;
+        row-gap: 40px;
+        padding: 30px 0px;
+        grid-template-areas:
+        "datos datos"
+        "usuario usuario"
+        "envio envio"
+        "pref pref"
+        "datos2 registrate" 
+    }
+    .datosPer input{
+        width: 300px;
+    }
+    .datosPer h3{
+        margin-bottom: 30px;
+    }
+    .usuario input{
+        width: 250px;
+    }
+    .pref{
+        padding-top: 0px;
+    }
+    .gen{
+        margin-top: 0px;
+    }
+    .botonRegistro{
+        justify-content: center;
     }
     /* ----FOOTER---- */
     .textoLogo{
@@ -914,7 +1040,7 @@ footer{
     .tituloPixel{
         font-size: 36px;
     }
-    .subTitulo h2{
+    .novedadesTitulo h2{
         font-size: 30px;
     }
     /* ----FOOTER---- */
@@ -997,6 +1123,72 @@ footer{
     .redesSection{
         padding-right: 5px ;
     }
+    /* ---- REGISTRO ---- */
+    .registro{
+        grid-template-columns: auto;
+        padding: 30px 0px;
+        grid-template-areas:
+        "datos"
+        "datos2"
+        "usuario"
+        "envio"
+        "pref" 
+        "registrate" 
+    }
+    .usuario form input{
+        width: 160px;
+    }
+    .user{
+        margin-right: 20px;
+    }
+    .datosPer input{
+        width: 200px;
+    }
+    .datosPer h3{
+        margin-left: 30px;
+    }
+    .datosPer2 select{
+        width: 200px;
+    }
+    .gen p{
+        margin-right: 10px;
+    }
+    .envio h4{
+        text-align: center;
+    }
+    .envio form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .envio form input{
+        width: 250px;
+    }
+    .envio form select{
+        width: 200px;
+    }
+    .enviodat1{
+        margin-right: 0px;
+    }
+    .pref{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .yesornot{
+        width: auto;
+        margin-left: 0px;
+    }
+    .yesornot p{
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .checkPref{
+        width: 250px;
+        justify-content: space-evenly;
+    }
+    .checkContainePref{
+        width: auto;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -1020,7 +1212,7 @@ footer{
     .productitulo{
         padding: 20px 0px;
     }
-    .subTitulo h2{
+    .novedadesTitulo h2{
         font-size: 28px;
     }
     .tituloPixel{
@@ -1045,6 +1237,11 @@ footer{
     }
     .categoriasFichas div h3{
         font-size: 27px;
+    }
+    /* ---- REGISTRO ---- */
+    .regisText{
+        font-size: 12px;
+        padding-top: 30px;
     }
     /* ----FOOTER---- */
     footer{
@@ -1117,7 +1314,7 @@ footer{
     .productitulo{
         padding: 18px 0px;
     }
-    .subTitulo h2{
+    .novedadesTitulo h2{
         font-size: 27px;
     }
     /*----CONTACTO----*/
@@ -1224,6 +1421,7 @@ footer{
     .categorias h2{
         padding-left: 10px;
     }
+    /* ----TITULOS---- */
     .tituloPixel{
         font-size: 29px;
     }
@@ -1261,4 +1459,23 @@ footer{
     .redesSection h3{
         margin-left: 15px;
     }
+        /* ---- REGISTRO ---- */
+        .datosPer input{
+            width: 180px;
+        }
+        .pais select{
+            width: 180px;
+        }
+        .usuario form input{
+            width: 130px;
+        }
+        .envio form input{
+            width: 180px;
+        }
+        .envio form select{
+            width: 180px;
+        }
+        .user{
+            margin-right: 10px;
+        }
 }
