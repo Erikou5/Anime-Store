@@ -18,20 +18,42 @@
             <a href="../index.html">Laugh Tale's <br> Store</a>
         </div>
         <div>
-            <nav>
-                <ul class="list">
-                    <li><a href="../pages/figuras.html">Figuras</a></li>
-                    <li><a href="../pages/consolasjuegos.html">Juegos y Consolas</a></li>
-                    <li><a href="../pages/registrate.html">Registrate</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbarHead">
+                <div class="container-fluid containNavlist">
+                    <button class="navbar-toggler hamburgerButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="../img/lineas.png" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulHead">
+                            <li class="nav-item login">
+                                <a class="nav-link active" href="#">Log in</a>
+                            </li>
+                            <li class="divisorList"><hr class="dropdown-divider"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdownHead" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/figuras.html">Figuras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/consolasjuegos.html">Juegos/Consolas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/contacto.html">Contacto </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section>
-            <h1 class="tituloPixel productitulo">Figuras!</h1>
+        <section class="productitulo">
+            <h1 class="tituloPixel">Figuras!</h1>
         </section>
         <section class="navProducts">
             <nav class="navbar navbar-dark">

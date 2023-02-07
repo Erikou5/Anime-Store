@@ -7,9 +7,6 @@
     box-sizing: border-box;
 }
 
-.boostrapHead{
-    padding: 6px 0px 8px ;
-}
 /* -------------- HEADER ---------------- */
 
 header {
@@ -19,6 +16,10 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid black;
+}
+
+.boostrapHead{
+    padding-top: 3px;
 }
 
 .logo{
@@ -38,31 +39,33 @@ header {
     font-style: italic;
     text-decoration: none;
     font-family: 'TheGoodMonolith', sans-serif;
+    text-shadow: 2px 2px black;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0px 25px 0px 5px;
+.navbarHead{
+    margin-right: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    flex-wrap: wrap;
+    padding: 0px;
+} 
+.ulHead li a{
+    color: whitesmoke;
+    font-family: 'TheGoodMonolith', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+}
+.dropdownHead{
+    background-color: rgba(65, 105, 225, 0.9);
+}
+.login a{
+    border-right: 1px solid white;
+    margin-right: 3px;
+}
+.containNavlist {
     padding: 0px;
 }
-
-.list li{
-    margin: 4px;
-}
-
-.list a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.list a:hover{
-    text-decoration: underline;
-    color: white;
+.divisorList hr{
+    display: none;
 }
 
 /* ------------- MAIN index ------------*/
@@ -257,8 +260,10 @@ body{
 .productitulo{
     background-color: black;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     margin: 0px;
+}
+.productitulo h1{
     font-size: 50px;
 }
 .subTitulo{
@@ -274,7 +279,7 @@ body{
 }
 .navProducts{
     background-color: rgba(0, 0, 0, 0.85);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: sticky;
     top: 0;
 }
@@ -287,11 +292,11 @@ body{
     object-fit: cover;
 }
 .accordionAtributos{
-    width: 300px;
+    width: 280px;
     height: 150px;
-    margin-left: 3px;
+    margin-left: 8px;
     position: sticky;
-    top:80px;
+    top:70px;
 }
 .accordion-button{
     background-color: rgba(65, 105, 225, 0.95);
@@ -303,17 +308,21 @@ body{
 }
 .accordion-body li a{
     color: black;
-    font-size: 17px;
+    font-size: 19px;
+    font-family:'TheGoodMonolith', sans-serif;
+    text-decoration: none;
+    font-style: italic;
+}
+.accordion-body li a:hover{
+    color: royalblue;
 }
 .productContainer{
     display:flex ;
     justify-content: space-between;
 }
 .goHead{
-    background-color: rgba(65, 105, 225, 0.8);
     width: 35px;
     height: 35px;
-    border-radius: 100%;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -830,6 +839,52 @@ footer{
         padding-right: 10px ;
     }
 }
+
+@media screen and (max-width:991px){
+    /* ---- HEADER ---- */
+    .navbarHead{
+    background-color: rgba(65, 105, 225, 0.1);
+    }
+    .hamburgerButton img{
+        width: 30px;
+        height: 30px;
+    }
+    .hamburgerButton{
+        margin: 5px 0px;
+        opacity: 0.8;
+    }
+    .ulHead li a{
+        margin: 0px;
+        padding: 5px 0px 3px 0px;
+    }
+    .ulHead{
+        width: 100px;
+    }
+    .login a{
+        border-right: none;
+    }
+    .divisorList{
+        color: black;
+    }
+    .divisorList hr{
+        display: inherit;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+    .dropdownHead{
+        border: none;
+        padding: 0px;
+        border-bottom: solid rgba(0, 0, 0, 0.25) 1px;
+        border-radius: 0%;
+        padding-bottom: 2px;
+        margin-top: 0px;
+    }
+    /* ----- PRODUCTOs ----- */
+    .productitulo{
+        display: none;
+    }
+} 
+
 @media screen and (max-width:950px){
     /* ---- REGISTRO ---- */
     .registro{
@@ -907,8 +962,8 @@ footer{
     .logo a{
     font-size: 40px;
     }
-    .list a{
-        font-size: 18px;
+    .containNavlist{
+        max-width: 130px;
     }
     /* ----Hero---- */
     .hero{
@@ -1062,40 +1117,25 @@ footer{
 
 @media screen and (max-width:600px) {
     /*----HEADER----*/
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-    }
     .logo a{
         font-size: 30px;
     }
     .logo a img{
         height: 80px;
         width: 80px;
-        margin-top: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 5px;
+        margin: 15px;
     }
-    .logo{
-        margin-bottom: 25px;
+    .navbarHead{
+        margin-right: 10px;
     }
-    .list{
-        flex-direction: initial;
-        margin-left: 0px;
-        margin-right: 0px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+    .ulHead li a{
+        font-size: 19px;
     }
-    .list a{
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 16px;
+    .containNavlist{
+        max-width: 120px;
     }
-    .list li{
-        margin: 3px;
+    .hamburgerButton{
+        opacity: 0.7;
     }
     /* ----HERO---- */
     .hero{
@@ -1286,8 +1326,12 @@ footer{
 }
 @media screen and (max-width:510px){
     /* ----HEADER---- */
-    .list a{
-        font-size: 15px;
+    .containNavlist{
+        margin-left: 15px;
+        max-width: 110px;
+    }
+    .ulHead li a{
+        font-size: 18px;
     }
     /* ----Hero---- */
     .hero{
@@ -1373,16 +1417,14 @@ footer{
     /* ----HEADER---- */
     .logo a{
         font-size: 28px;
+        text-shadow: 1px 1px black;
     }
     .logo a img{
         height: 60px;
         width: 60px;
     }
-    .logo{
-        margin-bottom: 35px ;
-    }
-    .list a{
-        font-size: 14px;
+    .containNavlist{
+        margin-left: 10px;
     }
     /* ----Hero---- */
     .hero{
