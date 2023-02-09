@@ -5,39 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Laugh Tale Store - Registrate</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header id="head">
-
+    <header class="boostrapHead" id="head">
         <div class="logo">
             <a href="../index.html"><img src="../img/anime/pokemon.png" alt="pokebola"></a>
             <a href="../index.html">Laugh Tale's <br> Store</a>
         </div>
         <div>
-            <nav>
-                <ul class="list">
-                    <li><a href="../pages/figuras.html">Figuras</a></li>
-                    <li><a href="../pages/consolasjuegos.html">Juegos y Consolas</a></li>
-                    <li><a href="../pages/registrate.html">Registrate</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbarHead">
+                <div class="container-fluid containNavlist">
+                    <button class="navbar-toggler hamburgerButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="../img/lineas.png" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulHead">
+                            <li class="nav-item loginList">
+                                <button type="button" class="btn loginBoton nav-link active" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Log in
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body ventanaLogin">
+                                                <div class="d-flex flex-column acceder">
+                                                    <label for="username">Nombre de usuario:</label>
+                                                    <input type="text" id="username" name="username">
+                                                    <label for="contrasenia">Password:</label>
+                                                    <input type="password" id="contrasenia" name="contrasenia">
+                                                </div>
+                                                <div>
+                                                    <p class="text-center regisTextModal">¿Aún no tienes cuenta? <a
+                                                            href="./registrate.html">Registrate!</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary modalFooterBtn"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button"
+                                                    class="btn btn-primary modalFooterBtn">Acceder</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divisorList">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdownHead" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/figuras.html">Figuras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/consolasjuegos.html">Juegos/Consolas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/contacto.html">Contacto </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
     <main class="registMain">
         <section class="titulo">
-            <h1>¡Registrate!</h1>
+            <h1><strong>¡Registrate!</strong></h1>
         </section>
         <section class="regisText">
-            <h2>Consegui beneficios y enterate de las ultimas novedades:</h2>
+            <h2><strong>Consegui beneficios y enterate de las ultimas novedades:</strong></h2>
         </section>
         <section class="registro">
             <div class="datosPer">
-                <h3>Datos de usuario:</h3>
+                <h3><strong>Datos de usuario:</strong></h3>
                 <form action="" method="" enctype="">
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -98,7 +157,7 @@
                 </form>
             </div>
             <div class="envio">
-                <h4>Direccion de envio (se puede completar luego):</h4>
+                <h4><strong>Direccion de envio (se puede completar luego):</strong></h4>
                 <form action="" method="" enctype="">
                     <div class="enviodat1">
                         <label for="provincia">Provincia:</label>
@@ -125,7 +184,7 @@
             </div>
             <div class="pref">
                 <div class="checkContainePref">
-                    <h4>Porfavor seleccione sus preferencias:</h4>
+                    <h4><strong>Porfavor seleccione sus preferencias:</strong></h4>
                     <div class="checkPref">
                         <div>
                             <form action="" method="" enctype="">
@@ -159,7 +218,7 @@
                 </form>
             </div>
             <div class="botonRegistro">
-                <button type="submit" value="crear cuenta">Registrarse</button>
+                <button type="submit" value="crear cuenta"><stong>Registrarse</stong></button>
             </div>
         </section>
     </main>
@@ -168,12 +227,12 @@
         <div class="footerLogo">
             <img src="../img/anime/ghost.png" alt="imagen anime">
             <div class="textoLogo">
-                <h2>¡Muchas gracias por visitarnos!</h2>
+                <h2><strong>¡Muchas gracias por visitarnos!</strong></h2>
                 <a href="#head">Vuelve arriba!</a>
             </div>
         </div>
         <div class="redesSection">
-            <h3>Nuestras Redes:</h3>
+            <h3><strong>Nuestras Redes:</strong></h3>
             <div class="redes">
                 <div class="redesText">
                     <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -192,6 +251,9 @@
             <p>Correo electronico: Animestore@hotmail.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,10 +6,14 @@
     padding: 0;            
     box-sizing: border-box;
 }
-
-.boostrapHead{
-    padding: 6px 0px 8px ;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
 }
+body p{
+    margin: 0px;
+}
+
 /* -------------- HEADER ---------------- */
 
 header {
@@ -19,6 +23,10 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid black;
+}
+
+.boostrapHead{
+    padding-top: 3px;
 }
 
 .logo{
@@ -38,38 +46,86 @@ header {
     font-style: italic;
     text-decoration: none;
     font-family: 'TheGoodMonolith', sans-serif;
+    text-shadow: 2px 2px black;
 }
 
-.list{
+.navbarHead{
+    margin-right: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    flex-wrap: wrap;
+    padding: 0px;
+} 
+.ulHead li a{
+    color: whitesmoke;
+    font-family: 'TheGoodMonolith', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+}
+.dropdownHead{
+    background-color: rgba(65, 105, 225, 0.9);
+}
+.loginList{
+    color: rgba(0, 0, 0, 0.85);
+}
+.loginBoton{
+    color: whitesmoke;
+    font-family: 'TheGoodMonolith', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    border-radius: 0;
+    border: none;
+    line-height: normal;
+    padding: 8px;
+    margin-right: 3px;
+    border-right: 1px solid white;
+}
+.acceder{
+    width: content;
+    margin:20px 0px
+}
+.ventanaLogin{
     display: flex;
     flex-direction: column;
-    list-style: none;
-    margin: 0px 25px 0px 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    color: black;
+}
+.ventanaLogin div p a{
+    color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-shadow: none;
+    font-weight: bold;
+}
+.ventanaLogin input{
+    width: 200px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+.ventanaLogin label{
+    margin-bottom: 4px;
+}
+.modal-header{
+    color: whitesmoke;
+    background-color:rgba(0, 0, 0, 0.85);
+}
+.modal-footer{
+    background-color: royalblue;
+}
+.modalFooterBtn{
+    border: solid 1px white;
+}
+.regisTextModal{
+    margin-bottom: 16px;
+}
+.containNavlist {
     padding: 0px;
 }
-
-.list li{
-    margin: 4px;
+.divisorList hr{
+    display: none;
 }
-
-.list a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.list a:hover{
-    text-decoration: underline;
-    color: white;
-}
-
 /* ------------- MAIN index ------------*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: normal;
-}
 
 .containHero{
     display: flex;
@@ -194,13 +250,14 @@ body{
     background-color: black;
     color: whitesmoke;
     font-style: italic;
-    font-size: 25px;
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 15px;
     margin-bottom: 5px;
 }
-
+.novedadesTitulo h2{
+    font-size: 37.5px;
+}
 .fichas{
     display: flex;
     justify-content: space-evenly;
@@ -257,8 +314,10 @@ body{
 .productitulo{
     background-color: black;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     margin: 0px;
+}
+.productitulo h1{
     font-size: 50px;
 }
 .subTitulo{
@@ -274,7 +333,7 @@ body{
 }
 .navProducts{
     background-color: rgba(0, 0, 0, 0.85);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: sticky;
     top: 0;
 }
@@ -287,11 +346,11 @@ body{
     object-fit: cover;
 }
 .accordionAtributos{
-    width: 300px;
+    width: 280px;
     height: 150px;
-    margin-left: 3px;
+    margin-left: 8px;
     position: sticky;
-    top:80px;
+    top:70px;
 }
 .accordion-button{
     background-color: rgba(65, 105, 225, 0.95);
@@ -303,22 +362,26 @@ body{
 }
 .accordion-body li a{
     color: black;
-    font-size: 17px;
+    font-size: 19px;
+    font-family:'TheGoodMonolith', sans-serif;
+    text-decoration: none;
+    font-style: italic;
+}
+.accordion-body li a:hover{
+    color: royalblue;
 }
 .productContainer{
     display:flex ;
     justify-content: space-between;
 }
 .goHead{
-    background-color: rgba(65, 105, 225, 0.8);
     width: 35px;
     height: 35px;
-    border-radius: 100%;
     display: flex;
     justify-content: center;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 12px;
+    right: 3px;
     opacity: 0.5;
 }
 .goHead:hover{
@@ -368,6 +431,7 @@ body{
 
 .contacto h3{
     margin-bottom: 50px;
+    font-size: 18.72px;
 }
 
 .contactoVias{
@@ -393,14 +457,14 @@ body{
     font-size: 18px;
 }
 
-.label{
+.contactLabel{
     display: flex;
     flex-direction: column;
     font-style: italic;
     font-size: 19px;
 }
 
-.label input{
+.contactLabel input{
     margin-bottom: 10px;
 }
 
@@ -453,6 +517,7 @@ body{
 /* ------------ REGISTRO ----------- */
 .registMain{
     padding-bottom: 50px;
+    color: black;
 }
 .registro{
     padding: 50px;
@@ -482,9 +547,14 @@ body{
 .regisText{
     padding-top: 50px;
     padding-left: 15px;
-    font-size: 15px;
 }
-
+.regisText h2{
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 /* --datos1-- */
 .datosPer{
     grid-area: datos;
@@ -498,6 +568,7 @@ body{
 }
 .datosPer h3{
     margin-bottom: 20px;
+    font-size: 18.72px;
 }
 .datosPer div{
     display: flex;
@@ -586,6 +657,9 @@ body{
 .envio{
     grid-area: envio;
 }
+.envio h4{
+    font-size: 16px;
+}
 .envio label{
     margin-bottom: 4px;
 }
@@ -621,6 +695,7 @@ body{
 }
 .pref h4{
     margin-bottom: 40px;
+    font-size: 16px;
 }
 .checkPref{
     display: flex;
@@ -651,10 +726,20 @@ body{
 }
 .botonRegistro button{
     padding: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-family: 'TheGoodMonolith', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
 }
-
+.botonRegistro button:hover{
+    border-color: royalblue;
+    color: royalblue;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);
+}
 /* ------------- FOOTER ---------- */
 
 footer{
@@ -830,6 +915,54 @@ footer{
         padding-right: 10px ;
     }
 }
+
+@media screen and (max-width:991px){
+    /* ---- HEADER ---- */
+    .navbarHead{
+    background-color: rgba(65, 105, 225, 0.1);
+    }
+    .hamburgerButton img{
+        width: 30px;
+        height: 30px;
+    }
+    .hamburgerButton{
+        margin: 5px 0px;
+        opacity: 0.8;
+    }
+    .ulHead li a{
+        margin: 0px;
+        padding: 5px 0px 3px 0px;
+    }
+    .ulHead{
+        width: 100px;
+    }
+    .loginBoton{
+        border-right: none;
+        margin: 0px;
+        padding: 5px 0px 3px 0px;
+    }
+    .divisorList{
+        color: black;
+    }
+    .divisorList hr{
+        display: inherit;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+    .dropdownHead{
+        border: none;
+        padding: 0px;
+        border-bottom: solid rgba(0, 0, 0, 0.25) 1px;
+        border-radius: 0%;
+        padding-bottom: 2px;
+        margin-top: 0px;
+    }
+    /* ----- PRODUCTOs ----- */
+    .productitulo{
+        display: none;
+    }
+} 
+
 @media screen and (max-width:950px){
     /* ---- REGISTRO ---- */
     .registro{
@@ -907,8 +1040,8 @@ footer{
     .logo a{
     font-size: 40px;
     }
-    .list a{
-        font-size: 18px;
+    .containNavlist{
+        max-width: 130px;
     }
     /* ----Hero---- */
     .hero{
@@ -1005,7 +1138,7 @@ footer{
 }
 
 @media screen and (max-width:720px) {
-        /* ----Hero---- */
+    /* ----Hero---- */
     .hero{
         width: 98%;
     }
@@ -1062,40 +1195,25 @@ footer{
 
 @media screen and (max-width:600px) {
     /*----HEADER----*/
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-    }
     .logo a{
         font-size: 30px;
     }
     .logo a img{
         height: 80px;
         width: 80px;
-        margin-top: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 5px;
+        margin: 15px;
     }
-    .logo{
-        margin-bottom: 25px;
+    .navbarHead{
+        margin-right: 10px;
     }
-    .list{
-        flex-direction: initial;
-        margin-left: 0px;
-        margin-right: 0px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+    .ulHead li a{
+        font-size: 19px;
     }
-    .list a{
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 16px;
+    .containNavlist{
+        max-width: 120px;
     }
-    .list li{
-        margin: 3px;
+    .hamburgerButton{
+        opacity: 0.7;
     }
     /* ----HERO---- */
     .hero{
@@ -1209,9 +1327,6 @@ footer{
     .titulo{
         padding: 25px 0px;
     }
-    .productitulo{
-        padding: 20px 0px;
-    }
     .novedadesTitulo h2{
         font-size: 28px;
     }
@@ -1286,8 +1401,12 @@ footer{
 }
 @media screen and (max-width:510px){
     /* ----HEADER---- */
-    .list a{
-        font-size: 15px;
+    .containNavlist{
+        margin-left: 15px;
+        max-width: 110px;
+    }
+    .ulHead li a{
+        font-size: 18px;
     }
     /* ----Hero---- */
     .hero{
@@ -1310,9 +1429,6 @@ footer{
     }
     .titulo{
         padding: 20px 0px;
-    }
-    .productitulo{
-        padding: 18px 0px;
     }
     .novedadesTitulo h2{
         font-size: 27px;
@@ -1373,16 +1489,14 @@ footer{
     /* ----HEADER---- */
     .logo a{
         font-size: 28px;
+        text-shadow: 1px 1px black;
     }
     .logo a img{
         height: 60px;
         width: 60px;
     }
-    .logo{
-        margin-bottom: 35px ;
-    }
-    .list a{
-        font-size: 14px;
+    .containNavlist{
+        margin-left: 10px;
     }
     /* ----Hero---- */
     .hero{
@@ -1406,6 +1520,9 @@ footer{
     .mapa {
         width: 300px;
         height: 250px;
+    }
+    .contacto h3{
+        margin-bottom: 35px;
     }
     /* ----CATEGORIAS FICHAS---- */
     .novedadesTitulo h2{
@@ -1459,23 +1576,23 @@ footer{
     .redesSection h3{
         margin-left: 15px;
     }
-        /* ---- REGISTRO ---- */
-        .datosPer input{
-            width: 180px;
-        }
-        .pais select{
-            width: 180px;
-        }
-        .usuario form input{
-            width: 130px;
-        }
-        .envio form input{
-            width: 180px;
-        }
-        .envio form select{
-            width: 180px;
-        }
-        .user{
-            margin-right: 10px;
-        }
+    /* ---- REGISTRO ---- */
+    .datosPer input{
+        width: 180px;
+    }
+    .pais select{
+        width: 180px;
+    }
+    .usuario form input{
+        width: 130px;
+    }
+    .envio form input{
+        width: 180px;
+    }
+    .envio form select{
+        width: 180px;
+    }
+    .user{
+        margin-right: 10px;
+    }
 }

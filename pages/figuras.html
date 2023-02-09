@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Laugh Tale Store - Figuras</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -18,20 +18,77 @@
             <a href="../index.html">Laugh Tale's <br> Store</a>
         </div>
         <div>
-            <nav>
-                <ul class="list">
-                    <li><a href="../pages/figuras.html">Figuras</a></li>
-                    <li><a href="../pages/consolasjuegos.html">Juegos y Consolas</a></li>
-                    <li><a href="../pages/registrate.html">Registrate</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbarHead">
+                <div class="container-fluid containNavlist">
+                    <button class="navbar-toggler hamburgerButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="../img/lineas.png" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulHead">
+                            <li class="nav-item loginList">
+                                <button type="button" class="btn loginBoton nav-link active" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Log in
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body ventanaLogin">
+                                                <div class="d-flex flex-column acceder">
+                                                    <label for="username">Nombre de usuario:</label>
+                                                    <input type="text" id="username" name="username">
+                                                    <label for="contrasenia">Password:</label>
+                                                    <input type="password" id="contrasenia" name="contrasenia">
+                                                </div>
+                                                <div>
+                                                    <p class="text-center regisTextModal">¿Aún no tienes cuenta? <a
+                                                            href="./registrate.html">Registrate!</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary modalFooterBtn"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button"
+                                                    class="btn btn-primary modalFooterBtn">Acceder</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divisorList">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdownHead" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/figuras.html">Figuras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/consolasjuegos.html">Juegos/Consolas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/contacto.html">Contacto </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-
     <main>
-        <section>
-            <h1 class="tituloPixel productitulo">Figuras!</h1>
+        <section class="productitulo">
+            <h1 class="tituloPixel">Figuras!</h1>
         </section>
         <section class="navProducts">
             <nav class="navbar navbar-dark">
