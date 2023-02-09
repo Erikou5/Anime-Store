@@ -142,7 +142,7 @@ header {
     flex-direction: column;
     background: linear-gradient(rgba(0, 0, 0, 0.300),rgba(0, 0, 0, 0)), url(../img/hero.png);
     width: 80%;
-    height: 77.5vh;
+    height: 79vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1045,7 +1045,7 @@ footer{
     }
     /* ----Hero---- */
     .hero{
-        height: 80.3vh;
+        height: 81vh;
     }
     /* ----TITULOS---- */
     .tituloPixel{
@@ -1217,7 +1217,7 @@ footer{
     }
     /* ----HERO---- */
     .hero{
-        height: 82.2vh;
+        height: 82.5vh;
     }
     /* ----CATEGORIAS FICHAS---- */
     .categoriasFichas div{
@@ -1312,7 +1312,7 @@ footer{
 @media screen and (max-width:550px) {
     /* ----Hero---- */
     .hero{
-        height: 68vh;
+        height: 70vh;
     }
     .hero h1{
         font-size: 30px;
@@ -1410,7 +1410,6 @@ footer{
     }
     /* ----Hero---- */
     .hero{
-        height: 67vh;
         border-top: 0px;
         border-bottom: 5px solid black;
     }
@@ -1499,9 +1498,6 @@ footer{
         margin-left: 10px;
     }
     /* ----Hero---- */
-    .hero{
-        height: 70vh;
-    }
     .hero h1{
         font-size: 27px;
         padding: 18px;
