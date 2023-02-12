@@ -323,15 +323,54 @@ header {
     padding-bottom: 10px;
     object-fit: contain;
 }
+/* -----fichas 2 */
+
+.fichas2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 .fichas2 div{
     height: 300px;
     width: 220px;
+    margin: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 15px 15px 17px 1px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 15px 15px 17px 1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 15px 15px 17px 1px rgba(0,0,0,0.32);
+}
+.fichas2 div h2{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .fichas2 img{
     height: 200px;
     width: 100%;
     padding: 10px;
     padding-bottom: 5px;
+    object-fit: contain;
+}
+.fichas2 div a{
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 15px ;
+    transition: 0.3s;
+}
+.fichas2 div a:hover{
+    border-radius: 10px;
+    background-color:rgb(65, 60, 225);
 }
 /*---------------PRODUCTOS----------------*/
 .productitulo{
@@ -864,6 +903,21 @@ footer{
 }
 
 /* -------------------------------RESPONSIVE----------------------------------- */
+@media screen and (max-width:1480px){
+    /* FICHAS PRODUCTOS  */
+    .accordion-button{
+        padding: 16px 10px;
+    }
+    .accordion-button::after{
+        margin-left: 15px;
+    }
+    .accordion-body{
+        padding: 0px;
+    }
+    .accordion-body ul{
+        padding-top: 10px;
+    }
+}
 
 @media screen and (max-width:1250px){
     /* ----CATEGORIAS FICHAS---- */
@@ -997,6 +1051,34 @@ footer{
     .dropdownFalso ul li{
         list-style: none;
     }
+    /* ---- FICHAS/PRODUCTOS ---- */
+    .accordion-button{
+        font-size: 15px;
+    }
+    .accordion-body li a{
+        font-size: 14px;
+    }
+    .accordionAtributos{
+        padding-right: 20px;
+    }
+    .fichas2 {
+        padding: 20px 0px;
+    }
+    .fichas2 div{
+        height: 260px;
+        width: 180px;
+        margin: 25px 15px;
+        box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+        -moz-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+    }
+    .fichas2 img{
+        height: 180px;
+        height: 160px;
+    }
+    .fichas div h2{
+        font-size: 14px;
+    }
     /* ----- TITULOS ----- */
     .productitulo{
         display: none;
@@ -1104,6 +1186,25 @@ footer{
         padding: 10px;
         padding-bottom: 5px;
     }
+    .fichas2 div{
+        width: 160px;
+        height: 240px;
+        margin: 20px 10px;
+        box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
+        -moz-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
+    }
+    .fichas2 img{
+        height: 155px;
+        padding-bottom: 0px;
+    }
+    .fichas2 div h2{
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+    .fichas2 div a{
+        padding: 6px 7px;
+    }
     /*----CONTACTO----*/
     .contacto{
         flex-direction: column;
@@ -1191,6 +1292,64 @@ footer{
     }
     .categoriasFichas div h3{
         font-size: 30px;
+    }
+    /* ---- FICHAS PRODUCTOS ---- */
+    .navProducts{
+        top:5px
+    }
+    .miniTitulo h3{
+        font-size: 21px;
+    }
+    .productContainer{
+        flex-direction: column;
+    }
+    .productos{
+        margin-left: 10px;
+    }
+    .navProducts{
+        margin-bottom: 10px;
+    }
+    .accordionAtributos{
+        width: 100%;
+        height: 70px;
+        padding: 20px 50px;
+        padding-top: 10px;
+        margin: 0px;
+        top: 55px;
+    }
+    .accordion-button{
+        padding: 7px;
+        padding-left: 15px;
+    }
+    .acordion1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "acord1 acord2";
+        grid-area: acord1;
+    }
+    .acordion2{
+        grid-area: acord2;
+    }
+    .accordion-button::after{
+        margin: auto;
+    }
+    .accordion-item{
+        border: none;
+        background-color: transparent;
+    }
+    .accordion-body ul{
+        background-color:royalblue;
+        padding: 5px 0px 3px 40px ;
+        margin: 0px;
+    }
+    .accordion-body li a{
+        color: whitesmoke;
+        text-decoration: none;
+        text-shadow: 1px 1px black;
+    }
+    .accordion-body li a:hover{
+        color: black;
     }
     /* ---- TITULOS---- */
     .tituloPixel{
@@ -1379,6 +1538,13 @@ footer{
     .categoriasFichas div h3{
         font-size: 27px;
     }
+    /* ---- FICHAS PRODUCTOS ----  */
+    .accordion-button{
+        font-size: 14px;
+    }
+    .accordion-body li a{
+        font-size: 13px;
+    }
     /* ---- REGISTRO ---- */
     .regisText{
         font-size: 12px;
@@ -1505,6 +1671,12 @@ footer{
     .fichas div h2{
         font-size: 14px;
     }
+    .navProducts nav{
+        padding: 3px 0px 5px 0px;
+    }
+    .accordionAtributos{
+        top: 50px;
+    }
     /* ----FOOTER---- */
     .redesSection h3{
         text-align: start;
@@ -1525,7 +1697,27 @@ footer{
         margin: 0px 0px 2px 2px;
     }
 }
-
+@media screen and (max-width:462px){
+    /* ---- PRODUCTOS ---- */
+    .navProducts{
+        margin-bottom: 0px;
+    }
+    .accordion-button{
+        width: 100px;
+        margin: 0px;
+        padding: 2px;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .accordion-body li a{
+        font-size: 12px;
+    }
+    .accordionAtributos{
+        padding: 10px 40px;
+        height: 50px;
+        top: 85px;
+    }
+}
 @media screen and (max-width:420px){
     /* ----HEADER---- */
     .logo a{
