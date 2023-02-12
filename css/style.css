@@ -1294,20 +1294,16 @@ footer{
         font-size: 30px;
     }
     /* ---- FICHAS PRODUCTOS ---- */
-    .navProducts{
-        top:5px
-    }
     .miniTitulo h3{
         font-size: 21px;
+        margin-left: 5px;
     }
     .productContainer{
         flex-direction: column;
     }
-    .productos{
-        margin-left: 10px;
-    }
     .navProducts{
         margin-bottom: 10px;
+        top:3px
     }
     .accordionAtributos{
         width: 100%;
@@ -1315,7 +1311,7 @@ footer{
         padding: 20px 50px;
         padding-top: 10px;
         margin: 0px;
-        top: 55px;
+        top: 53px;
     }
     .accordion-button{
         padding: 7px;
@@ -1340,7 +1336,7 @@ footer{
     }
     .accordion-body ul{
         background-color:royalblue;
-        padding: 5px 0px 3px 40px ;
+        padding: 5px 0px 5px 35px ;
         margin: 0px;
     }
     .accordion-body li a{
@@ -1494,7 +1490,7 @@ footer{
     }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:555px) {
     /* ----Hero---- */
     .hero{
         height: 70vh;
@@ -1544,6 +1540,9 @@ footer{
     }
     .accordion-body li a{
         font-size: 13px;
+    }
+    .stickyJuegos{
+        top: 88px;
     }
     /* ---- REGISTRO ---- */
     .regisText{
@@ -1674,8 +1673,11 @@ footer{
     .navProducts nav{
         padding: 3px 0px 5px 0px;
     }
-    .accordionAtributos{
-        top: 50px;
+    .stickyFiguras{
+        top: 45px;
+    }
+    .stickyJuegos{
+        top: 80px;
     }
     /* ----FOOTER---- */
     .redesSection h3{
@@ -1715,7 +1717,7 @@ footer{
     .accordionAtributos{
         padding: 10px 40px;
         height: 50px;
-        top: 85px;
+        top: 82px;
     }
 }
 @media screen and (max-width:420px){
