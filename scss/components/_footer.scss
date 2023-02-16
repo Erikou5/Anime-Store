@@ -1,0 +1,96 @@
+/* ------------- FOOTER ---------- */
+
+footer{
+    background: rgb(19,69,217);
+    background: linear-gradient(0deg, rgba(19,69,217,1) 0%, rgba(65,105,225,1) 10%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 10px black solid;
+    .footerLogo{
+        display: flex;
+        img{
+            width: 180px;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+        .textoLogo{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 350px;
+            h2{
+                font-size: 32px;
+                color: whitesmoke;
+                font-family: 'TheGoodMonolith', sans-serif;
+            }
+            a{
+                font-style: italic;
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                &:hover{
+                    font-family: 'Silkscreen', sans-serif;
+                    font-size: 25px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .redesSection{
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 10px;
+        div{ 
+            a{
+            color: #f5f5f5;
+            font-size: 18px;
+            font-style: italic;
+            }
+        }
+        h3{
+            font-family: 'TheGoodMonolith', sans-serif;
+            font-size: 23px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .redes{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .redesText{
+                a{
+                    &:hover{
+                        font-family: 'TheGoodMonolith', sans-serif;
+                        transform: scale(1.1);
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            .redesImg {
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 5px;
+                    &:hover{
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+        p{
+            margin-top: 10px;
+            color: black;
+        }
+    }
+}

@@ -23,9 +23,6 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid black;
-}
-
-.boostrapHead{
     padding-top: 3px;
 }
 
@@ -84,7 +81,7 @@ header {
 }
 .acceder{
     width: content;
-    margin:20px 0px
+    margin:20px 0px;
 }
 .ventanaLogin{
     display: flex;
@@ -381,6 +378,10 @@ header {
 }
 .productitulo h1{
     font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: whitesmoke;
+    font-family: 'TheGoodMonolith', sans-serif;
 }
 .subTitulo{
     padding-top: 30px;
@@ -407,6 +408,10 @@ header {
 .logoNav img{
     object-fit: cover;
 }
+.productContainer{
+    display:flex ;
+    justify-content: space-between;
+}
 .accordionAtributos{
     width: 280px;
     height: 150px;
@@ -430,10 +435,6 @@ header {
 }
 .accordion-body li a:hover{
     color: royalblue;
-}
-.productContainer{
-    display:flex ;
-    justify-content: space-between;
 }
 .goHead{
     width: 35px;
@@ -563,7 +564,6 @@ header {
     font-style: italic;
 }
 
-
 .mapa {
     border: 1px solid black;
     width: 500px;
@@ -634,14 +634,12 @@ header {
 .datosPer div{
     display: flex;
     flex-direction: column;
+    margin: 5px 0px;
 }
 .datosPer form{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.datosPer form div{
-    margin: 5px 0px;
 }
 
 /* --datos2-- */
@@ -653,10 +651,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.datosPer2 select{
-    margin-left: 15px;
-    font-size: 16px;
 }
 .gen{
     display: flex;
@@ -687,6 +681,7 @@ header {
 .pais select{
     margin-left: 50px;
     width: 173px;
+    font-size: 16px;
 }
 
 /* --usuario-- */
@@ -767,7 +762,7 @@ header {
     flex-direction: column;
 }
 .checkPref input{
-    margin: 6px 0px;
+    margin: 5.6px 0px 6px;
 }
 .checkPref label{
     margin-bottom: 5px;
@@ -822,10 +817,13 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 20px;
-    color: whitesmoke;
     width: 350px;
+}
+
+.textoLogo h2{
+    color: whitesmoke;
     font-family: 'TheGoodMonolith', sans-serif;
+    font-size: 32px;
 }
 
 .textoLogo a{
@@ -977,8 +975,8 @@ footer{
         margin-bottom: 20px;
     }
     /* ----FOOTER--- */
-    .textoLogo{
-        font-size: 18px;
+    .textoLogo h2{
+        font-size: 27px;
     }
     .footerLogo img{
         width: 140px;
@@ -1244,8 +1242,8 @@ footer{
         justify-content: center;
     }
     /* ----FOOTER---- */
-    .textoLogo{
-        font-size: 15px;
+    .textoLogo h2{
+        font-size: 22.5px;
     }
     .footerLogo{
         width: 40%;
@@ -1289,6 +1287,9 @@ footer{
     .categoriasFichas div{
         width:190px ;
         height: 350px;
+    }
+    .categoriasFichas div a img{
+        border: none;
     }
     .categoriasFichas div h3{
         font-size: 30px;
@@ -1365,8 +1366,8 @@ footer{
         width: 130px;
         height: 130px;
     }
-    .textoLogo{
-        font-size: 14px;
+    .textoLogo h2{
+        font-size: 21px;
         justify-content: flex-start;
     }
 }
@@ -1705,7 +1706,6 @@ footer{
         margin-bottom: 0px;
     }
     .accordion-button{
-        width: 100px;
         margin: 0px;
         padding: 2px;
         padding-left: 10px;
@@ -1791,20 +1791,6 @@ footer{
     .fichas div a{
         padding: 6px 7px;
     }
-    /* ----FOOTER---- */
-    .textoLogo h2{
-        font-size: 18px;
-    }
-    .textoLogo a{
-        font-size: 19px;
-    }
-    .textoLogo a:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 19px;
-    }
-    .redesSection h3{
-        margin-left: 15px;
-    }
     /* ---- REGISTRO ---- */
     .datosPer input{
         width: 180px;
@@ -1823,5 +1809,33 @@ footer{
     }
     .user{
         margin-right: 10px;
+    }
+        /* ----FOOTER---- */
+    .textoLogo h2{
+        font-size: 18px;
+    }
+    .textoLogo a{
+        font-size: 19px;
+    }
+    .textoLogo a:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+    }
+    .redesSection h3{
+        margin-left: 15px;
+    }
+    /* ----FOOTER---- */
+    .textoLogo h2{
+        font-size: 18px;
+    }
+    .textoLogo a{
+        font-size: 19px;
+    }
+    .textoLogo a:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+    }
+    .redesSection h3{
+        margin-left: 15px;
     }
 }
