@@ -640,8 +640,8 @@ header {
 
 /* ------------- FOOTER ---------- */
 footer {
-  background: #1345d9;
-  background: linear-gradient(0deg, #1345d9 0%, royalblue 10%);
+  background: royalblue;
+  background: linear-gradient(180deg, royalblue 85%, #1345d9 100%);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

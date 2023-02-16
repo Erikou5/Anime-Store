@@ -1,0 +1,38 @@
+/*--------- VARIABLES -------*/
+
+$color-prin: royalblue;
+$color-sec: black;
+$fichas-border:rgba(0, 0, 0, 0.7);
+$buy-hover:rgb(65, 60, 225);
+
+//list
+
+$color:
+rgba(0, 0, 0, 0.85),
+whitesmoke,
+white;
+
+$font:
+Arial, Helvetica, sans-serif,
+'TheGoodMonolith', sans-serif,
+'Silkscreen', sans-serif;
+
+//extend
+
+%fichas-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+// mixins
+
+@mixin display($disp,$justify,$align){
+    display: $disp;
+    justify-content: $justify ;
+    align-items: $align ;
+}
