@@ -23,8 +23,8 @@
         h1{
             font-size: 40px;
             margin-top: 30px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.541);
+            color: nth($color-letras,2);
+            background-color: nth($color-transparente,4);
             padding: 35px 20px;
             border-radius: 20px;
             font-family: 'Silkscreen', sans-serif;
@@ -34,8 +34,8 @@
             font-size: 23px;
             bottom: 0;
             margin-bottom: 20px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.541);
+            color: nth($color-letras,2);
+            background-color: nth($color-transparente,4);
             padding: 7px 12px;
             border-radius: 10px;
             font-family: 'Silkscreen', sans-serif;
@@ -47,13 +47,13 @@
 /*--------CATEGORIAS INDEX---------*/
 
 .categorias{
-    background: rgb(65,105,225);
+    background: $color-prin;
     background: radial-gradient(circle, rgba(65,105,225,1) 76%, rgba(15,38,113,1) 100%);
     font-family: 'TheGoodMonolith', sans-serif;
     .tituloPixel{
         font-size: 45px;
         font-style: italic;
-        color: whitesmoke;
+        color: nth($color-letras,1);
         font-family: 'TheGoodMonolith', sans-serif;
         font-weight: bold;
         padding-top: 40px;
@@ -80,8 +80,8 @@
                 -moz-box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.75);
             }
             h3{
-                background-color: rgba(0, 0, 0, 0.7);
-                color: white;
+                background-color: nth($color-transparente,3);
+                color: nth($color-letras,2);
                 padding: 0px 10px;
                 position: absolute;
                 bottom: 0;
@@ -110,8 +110,8 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
     .novedadesTitulo{
-        background-color: black;
-        color: whitesmoke;
+        background-color: $color-sec;
+        color: nth($color-letras,1);
         font-style: italic;
         padding-top: 30px;
         padding-bottom: 20px;
@@ -127,7 +127,7 @@
 /*---------------PRODUCTOS----------------*/
 
 .navProducts{
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: nth($color-transparente,1);
     margin-bottom: 20px;
     position: sticky;
     top: 0;
@@ -158,8 +158,8 @@
         h2{
             .accordion-button{
                 background-color: rgba(65, 105, 225, 0.95);
-                color: white;
-                border: rgba(0, 0, 0, 0.85) solid 1px;
+                color: nth($color-letras,2);
+                border: nth($color-transparente,1) solid 1px;
             }
         }
         .accordion-body{
@@ -167,11 +167,11 @@
                 li{
                     margin-bottom: 5px;
                     a{
-                        color: black;
+                        color: nth($color-letras,3);
                         font-size: 16.5px;
                         font-family:'Silkscreen', sans-serif;
                         &:hover{
-                            color: royalblue;
+                            color: $color-prin;
                         }
                     }
                 }
@@ -189,9 +189,7 @@
 
 .contacto{
     margin-top: 50px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: flex-start;
+    @include display(flex,space-evenly,flex-start);
     flex-wrap: wrap;
     margin-bottom: 100px;
     div{
@@ -260,8 +258,8 @@
 .ubicacion{
     h2{
         text-align: center;
-        background-color: black;
-        color: whitesmoke;
+        background-color: $color-sec;
+        color: nth($color-letras,1);
         font-size: 30px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -285,7 +283,7 @@
 
 .registMain{
     padding-bottom: 50px;
-    color: black;
+    color: nth($color-letras,3);
     .regisText{
         padding-top: 50px;
         padding-left: 15px;
@@ -355,20 +353,16 @@
 .datosPer2{
     grid-area: datos2;
     form{
-        display: flex;
+        @include display(flex,center,center);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .gen{
             display: flex;
             align-items: center;
             margin-bottom: 15px;
             margin-top: 30px;
             div{
-                display: flex;
+                @include display(flex,center,center);
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 margin-right: 30px;
                 margin-left: 10px;
                 input{
@@ -402,9 +396,7 @@
     display: flex;
     align-items: center;
     form{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display(flex,center,center);
         div{
             display: flex;
             flex-direction: column;
@@ -505,11 +497,11 @@
         font-size: 18px;
         font-style: italic;
         font-weight: bold;
-        color: black;
+        color: nth($color-letras,3);
         transition: 0.2s;
         &:hover{
-            border-color: royalblue;
-            color: royalblue;
+            border-color: $color-prin;
+            color: $color-prin;
             box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);
             -webkit-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);
             -moz-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.32);

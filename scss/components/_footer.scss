@@ -1,14 +1,14 @@
 /* ------------- FOOTER ---------- */
 
 footer{
-    background: rgb(65,105,225);
+    background: $color-prin;
     background: linear-gradient(180deg, rgba(65,105,225,1) 85%, rgba(19,69,217,1) 100%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    border-top: 10px black solid;
+    border-top: 10px $color-sec solid;
     .footerLogo{
         display: flex;
         img{
@@ -23,19 +23,19 @@ footer{
             width: 350px;
             h2{
                 font-size: 32px;
-                color: whitesmoke;
+                color: nth($color-letras,1);
                 font-family: 'TheGoodMonolith', sans-serif;
             }
             a{
                 font-style: italic;
-                color: whitesmoke;
+                color: nth($color-letras,1);
                 font-size: 30px;
                 margin-top: 40px;
                 font-family: Arial, Helvetica, sans-serif;
                 &:hover{
                     font-family: 'Silkscreen', sans-serif;
                     font-size: 25px;
-                    color: white;
+                    color: nth($color-letras,2);
                 }
             }
         }
@@ -47,7 +47,7 @@ footer{
         margin-right: 10px;
         div{ 
             a{
-            color: #f5f5f5;
+            color: nth($color-letras,1);
             font-size: 18px;
             font-style: italic;
             }
@@ -55,7 +55,7 @@ footer{
         h3{
             font-family: 'TheGoodMonolith', sans-serif;
             font-size: 23px;
-            color: black;
+            color: nth($color-letras,3);
             margin-bottom: 10px;
         }
         .redes{
@@ -73,7 +73,7 @@ footer{
                         font-family: 'TheGoodMonolith', sans-serif;
                         transform: scale(1.1);
                         text-decoration: none;
-                        color: white;
+                        color: nth($color-letras,2);
                     }
                 }
             }
@@ -90,7 +90,7 @@ footer{
         }
         p{
             margin-top: 10px;
-            color: black;
+            color: nth($color-letras,3);
         }
     }
 }

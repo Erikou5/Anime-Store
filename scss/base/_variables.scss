@@ -7,15 +7,16 @@ $buy-hover:rgb(65, 60, 225);
 
 //list
 
-$color:
+$color-transparente:
 rgba(0, 0, 0, 0.85),
-whitesmoke,
-white;
+rgba(65, 105, 225, 0.9),
+rgba(0, 0, 0, 0.7),
+rgba(0, 0, 0, 0.541);
 
-$font:
-Arial, Helvetica, sans-serif,
-'TheGoodMonolith', sans-serif,
-'Silkscreen', sans-serif;
+$color-letras:
+whitesmoke,
+white,
+black;
 
 //extend
 

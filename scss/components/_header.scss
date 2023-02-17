@@ -1,18 +1,16 @@
 /* -------------- HEADER ---------------- */
 
 header {
-    background: rgb(65,105,225);
+    background: $color-prin;
     background: linear-gradient(0deg, rgba(65,105,225,1) 85%, rgba(19,69,217,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display(flex,space-between,center);
     border-bottom: 5px solid black;
     padding-top: 3px;
     .logo{
         display: flex;
         align-items: center ;
         a{
-            color: white;
+            color: nth($color-letras,2);
             font-size: 48px;
             font-style: italic;
             text-decoration: none;
@@ -28,7 +26,7 @@ header {
     div{
         .navbarHead{
             margin-right: 25px;
-            background-color: rgba(0, 0, 0, 0.85);
+            background-color: nth($color-transparente,1);
             flex-wrap: wrap;
             padding: 0px;
             .containNavlist {
@@ -44,9 +42,9 @@ header {
                             display: none;
                         }
                         .loginList{
-                            color: rgba(0, 0, 0, 0.85);
+                            color: nth($color-transparente,1);
                             .loginBoton{
-                                color: whitesmoke;
+                                color: nth($color-letras,1);
                                 font-family: 'TheGoodMonolith', sans-serif;
                                 font-size: 20px;
                                 text-shadow: 1px 1px black;
@@ -62,11 +60,11 @@ header {
                             }
                             div{
                                 .modal-content{
-                                    border: 2px solid black;
+                                    border: 2px solid $color-sec;
                                     border-radius: 8px;
                                     .modal-header{
-                                        color: whitesmoke;
-                                        background-color:rgba(0, 0, 0, 0.85);
+                                        color: nth($color-letras,1);
+                                        background-color:nth($color-transparente,1);
                                         font-family: 'TheGoodMonolith', sans-serif;
                                         h5{
                                             font-size: 24px;
@@ -74,12 +72,10 @@ header {
                                         }
                                     }
                                     .ventanaLogin{
-                                        display: flex;
+                                        @include display(flex,center,center);
                                         flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
                                         padding: 0px;
-                                        color: black;
+                                        color: nth($color-letras,3);
                                         .acceder{
                                             width: content;
                                             margin:20px 0px;
@@ -106,7 +102,7 @@ header {
                                         } 
                                     }
                                     .modal-footer{
-                                        background-color: royalblue;
+                                        background-color: $color-prin;
                                         .modalFooterBtn{
                                             border: solid 1px white;
                                         }
@@ -116,7 +112,7 @@ header {
                         }
                         li{
                             a{
-                                color: whitesmoke;
+                                color: nth($color-letras,1);
                                 font-family: 'TheGoodMonolith', sans-serif;
                                 font-size: 20px;
                                 text-shadow: 1px 1px black;
@@ -125,7 +121,7 @@ header {
                                 }
                             }
                             .dropdownUl{
-                                background-color: rgba(65, 105, 225, 0.9);
+                                background-color: nth($color-transparente,2);
                                 a{
                                     &:hover{
                                         color: black;

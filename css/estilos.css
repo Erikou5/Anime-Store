@@ -1,5 +1,15 @@
+/*--------- VARIABLES -------*/
 @import url("https://fonts.cdnfonts.com/css/thegoodmonolith");
 @import url("https://fonts.cdnfonts.com/css/silkscreen-2");
+.fichas, .fichas2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -52,89 +62,73 @@ body {
   .miniTitulo h3 {
     font-size: 25px; }
 
-.fichas {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  box-sizing: border-box;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 20px; }
-  .fichas div {
-    height: 350px;
-    width: 250px;
-    margin: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-    -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-    -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
-    .fichas div h2 {
-      font-size: 15px;
-      font-style: italic;
-      font-weight: bold;
-      color: black;
-      margin-bottom: 25px;
-      padding-left: 10px;
-      padding-right: 10px; }
-    .fichas div a {
-      text-decoration: none;
-      background-color: royalblue;
-      color: whitesmoke;
-      padding: 10px;
-      font-size: 15px;
-      transition: 0.3s; }
-      .fichas div a:hover {
-        border-radius: 10px;
-        background-color: #413ce1; }
-    .fichas div img {
-      height: 250px;
-      width: 200px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      object-fit: contain; }
+.fichas div {
+  height: 350px;
+  width: 250px;
+  margin: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
+  .fichas div h2 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .fichas div a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s; }
+    .fichas div a:hover {
+      border-radius: 10px;
+      background-color: #413ce1; }
+  .fichas div img {
+    height: 250px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    object-fit: contain; }
 
-.fichas2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  box-sizing: border-box;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 20px; }
-  .fichas2 div {
-    height: 300px;
-    width: 220px;
-    margin: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-    -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-    -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
-    .fichas2 div h2 {
-      font-size: 15px;
-      font-style: italic;
-      font-weight: bold;
-      color: black;
-      margin-bottom: 25px;
-      padding-left: 10px;
-      padding-right: 10px; }
-    .fichas2 div img {
-      height: 200px;
-      width: 100%;
-      padding: 10px;
-      padding-bottom: 5px;
-      object-fit: contain; }
-    .fichas2 div a {
-      text-decoration: none;
-      background-color: royalblue;
-      color: whitesmoke;
-      padding: 10px;
-      font-size: 15px;
-      transition: 0.3s; }
-      .fichas2 div a:hover {
-        border-radius: 10px;
-        background-color: #413ce1; }
+.fichas2 div {
+  height: 300px;
+  width: 220px;
+  margin: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
+  .fichas2 div h2 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .fichas2 div img {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 5px;
+    object-fit: contain; }
+  .fichas2 div a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s; }
+    .fichas2 div a:hover {
+      border-radius: 10px;
+      background-color: #413ce1; }
 
 .goHead {
   width: 35px;
@@ -213,9 +207,9 @@ header {
               text-shadow: 1px 1px black; }
           header div .navbarHead .containNavlist div .ulHead .loginList div .modal-content .ventanaLogin {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             padding: 0px;
             color: black; }
             header div .navbarHead .containNavlist div .ulHead .loginList div .modal-content .ventanaLogin .acceder {
@@ -522,9 +516,9 @@ header {
   grid-area: datos2; }
   .datosPer2 form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-direction: column; }
     .datosPer2 form .gen {
       display: flex;
       align-items: center;
@@ -532,9 +526,9 @@ header {
       margin-top: 30px; }
       .datosPer2 form .gen div {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-right: 30px;
         margin-left: 10px; }
         .datosPer2 form .gen div input {
@@ -557,8 +551,8 @@ header {
   align-items: center; }
   .usuario form {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .usuario form div {
       display: flex;
       flex-direction: column; }
@@ -679,7 +673,7 @@ footer {
     margin-left: 40px;
     margin-right: 10px; }
     footer .redesSection div a {
-      color: #f5f5f5;
+      color: whitesmoke;
       font-size: 18px;
       font-style: italic; }
     footer .redesSection h3 {

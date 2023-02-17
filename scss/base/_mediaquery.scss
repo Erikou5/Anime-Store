@@ -136,7 +136,7 @@
         display: initial;
     }
     .dropdownFalso p{
-        color: whitesmoke;
+        color: nth($color-letras,1);
         font-family: 'TheGoodMonolith', sans-serif;
         font-size: 20px;
         text-shadow: 1px 1px black;
@@ -434,17 +434,17 @@
         background-color: transparent;
     }
     .accordion-body ul{
-        background-color:royalblue;
+        background-color:$color-prin;
         padding: 5px 0px 5px 35px ;
         margin: 0px;
     }
     .productContainer .accordionAtributos .accordion-body ul li a{
-        color: whitesmoke;
+        color: nth($color-letras,1);
         text-decoration: none;
         text-shadow: 1px 1px black;
     }
     .productContainer .accordionAtributos .accordion-body ul li a:hover{
-        color: black;
+        color: nth($color-letras,3);
     }
     /* ---- TITULOS---- */
     .categorias .tituloPixel{
