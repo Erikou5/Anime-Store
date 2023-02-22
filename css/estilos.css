@@ -1,14 +1,13 @@
 /*--------- VARIABLES -------*/
 @import url("https://fonts.cdnfonts.com/css/thegoodmonolith");
 @import url("https://fonts.cdnfonts.com/css/silkscreen-2");
-.fichas, .fichas2 {
+.containFichas, .containFichas2 {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   box-sizing: border-box;
   text-align: center;
-  flex-wrap: wrap;
-  padding: 20px; }
+  flex-wrap: wrap; }
 
 * {
   margin: 0;
@@ -62,73 +61,87 @@ body {
   .miniTitulo h3 {
     font-size: 25px; }
 
-.fichas div {
-  height: 350px;
-  width: 250px;
-  margin: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-  -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas div h2 {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px; }
-  .fichas div a {
-    text-decoration: none;
-    background-color: royalblue;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 15px;
-    transition: 0.3s; }
-    .fichas div a:hover {
-      border-radius: 10px;
-      background-color: #413ce1; }
-  .fichas div img {
-    height: 250px;
-    width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    object-fit: contain; }
+.containFichas {
+  padding: 20px; }
+  .containFichas .fichas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+    margin: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
+    .containFichas .fichas h2 {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0px; }
+    .containFichas .fichas a {
+      text-decoration: none;
+      background-color: royalblue;
+      color: whitesmoke;
+      padding: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+      margin-bottom: 10px; }
+      .containFichas .fichas a:hover {
+        border-radius: 10px;
+        background-color: #413ce1; }
+    .containFichas .fichas img {
+      height: 250px;
+      width: 200px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      object-fit: contain; }
 
-.fichas2 div {
-  height: 300px;
-  width: 220px;
-  margin: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-  -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas2 div h2 {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px; }
-  .fichas2 div img {
-    height: 200px;
-    width: 100%;
-    padding: 10px;
-    padding-bottom: 5px;
-    object-fit: contain; }
-  .fichas2 div a {
-    text-decoration: none;
-    background-color: royalblue;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 15px;
-    transition: 0.3s; }
-    .fichas2 div a:hover {
-      border-radius: 10px;
-      background-color: #413ce1; }
+.containFichas2 {
+  padding: 20px 0px; }
+  .containFichas2 .fichas2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 220px;
+    margin: 30px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 15px 15px 17px 1px rgba(0, 0, 0, 0.32); }
+    .containFichas2 .fichas2 h2 {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0px; }
+    .containFichas2 .fichas2 img {
+      height: 200px;
+      width: 100%;
+      padding: 10px;
+      padding-bottom: 5px;
+      object-fit: contain; }
+    .containFichas2 .fichas2 a {
+      text-decoration: none;
+      background-color: royalblue;
+      color: whitesmoke;
+      padding: 10px;
+      margin-bottom: 8px;
+      font-size: 15px;
+      transition: 0.3s; }
+      .containFichas2 .fichas2 a:hover {
+        border-radius: 10px;
+        background-color: #413ce1; }
 
 .goHead {
   width: 35px;
@@ -770,6 +783,30 @@ footer {
   footer .redesSection {
     padding-right: 10px; } }
 
+@media screen and (max-width: 1025px) {
+  /* ---- FICHAS/PRODUCTOS ---- */
+  .accordion-button {
+    font-size: 15px; }
+  .productContainer .accordionAtributos .accordion-body ul li a {
+    font-size: 14px; }
+  .productContainer .accordionAtributos {
+    padding-right: 20px; }
+  .containFichas2 .fichas2 {
+    height: 260px;
+    width: 180px;
+    margin: 25px 15px;
+    box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32); }
+  .containFichas2 .fichas2 img {
+    height: 180px;
+    height: 160px; }
+  .containFichas2 .fichas2 a {
+    padding: 8px; }
+  .containFichas2 .fichas2 h2 {
+    font-size: 14px;
+    padding-top: 5px; } }
+
 @media screen and (max-width: 991px) {
   /* ---- HEADER ---- */
   header .logo a img {
@@ -814,27 +851,6 @@ footer {
     padding-left: 10px; }
   .dropdownFalso ul li {
     list-style: none; }
-  /* ---- FICHAS/PRODUCTOS ---- */
-  .accordion-button {
-    font-size: 15px; }
-  .productContainer .accordionAtributos .accordion-body ul li a {
-    font-size: 14px; }
-  .productContainer .accordionAtributos {
-    padding-right: 20px; }
-  .fichas2 {
-    padding: 20px 0px; }
-  .fichas2 div {
-    height: 260px;
-    width: 180px;
-    margin: 25px 15px;
-    box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
-    -webkit-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
-    -moz-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas2 div img {
-    height: 180px;
-    height: 160px; }
-  .fichas div h2 {
-    font-size: 14px; }
   /* ----- TITULOS ----- */
   .productitulo {
     display: none; } }
@@ -905,29 +921,32 @@ footer {
   .categorias .categoriasFichas div h3 {
     font-size: 38px; }
   /* ---- FICHAS---- */
-  .fichas div {
+  .containFichas .fichas {
     height: 300px;
     width: 220px; }
-  .fichas div img {
+  .containFichas .fichas img {
     height: 200px;
     width: 100%;
     padding: 10px;
     padding-bottom: 5px; }
-  .fichas2 div {
+  .containFichas .fichas a {
+    margin-bottom: 8px; }
+  .containFichas2 .fichas2 {
     width: 160px;
     height: 240px;
     margin: 20px 10px;
     box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas2 div img {
+  .containFichas2 .fichas2 img {
     height: 155px;
     padding-bottom: 0px; }
-  .fichas2 div h2 {
+  .containFichas2 .fichas2 h2 {
     font-size: 13px;
-    margin-bottom: 17px; }
-  .fichas2 div a {
-    padding: 6px 7px; }
+    padding-top: 3px; }
+  .containFichas2 .fichas2 a {
+    padding: 6px 7px;
+    margin-bottom: 6px; }
   /*----CONTACTO----*/
   .contacto {
     flex-direction: column;
@@ -1077,12 +1096,14 @@ footer {
   .categorias .categoriasFichas div h3 {
     margin: 0px 0px 2px 5px; }
   /* ---- FICHAS ---- */
-  .fichas div {
+  .containFichas .fichas {
     height: 280px;
     width: 200px;
     margin: 25px 15px; }
-  .fichas div img {
+  .containFichas .fichas img {
     height: 180px; }
+  .containFichas .fichas a {
+    padding: 8px; }
   /* FOOTER */
   footer .redesSection {
     padding-right: 5px; }
@@ -1248,18 +1269,19 @@ footer {
     font-size: 25px; }
   .categorias .categoriasFichas div a img {
     border-radius: 0%; }
-  .fichas {
+  .containFichas {
     padding: 20px 0px; }
-  .fichas div {
+  .containFichas .fichas {
     height: 260px;
     width: 180px;
     box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas div img {
+  .containFichas .fichas img {
     height: 160px; }
-  .fichas div h2 {
-    font-size: 14px; }
+  .containFichas .fichas h2 {
+    font-size: 14px;
+    padding-top: 5px; }
   /* ---- PRODUCTOS---- */
   .navProducts nav {
     padding: 3px 0px 5px 0px; }
@@ -1339,21 +1361,22 @@ footer {
     font-size: 29px;
     padding-left: 10px; }
   /* ---- FICHAS ---- */
-  .fichas div {
+  .containFichas .fichas {
     width: 160px;
     height: 240px;
     margin: 20px 10px;
     box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 8px 8px 17px 1px rgba(0, 0, 0, 0.32); }
-  .fichas div img {
+  .containFichas .fichas img {
     height: 155px;
     padding-bottom: 0px; }
-  .fichas div h2 {
+  .containFichas .fichas h2 {
     font-size: 13px;
-    margin-bottom: 17px; }
-  .fichas div a {
-    padding: 6px 7px; }
+    padding-top: 3px; }
+  .containFichas .fichas a {
+    padding: 6px 7px;
+    margin-bottom: 6px; }
   /* ---- REGISTRO ---- */
   .datosPer form div input {
     width: 180px; }

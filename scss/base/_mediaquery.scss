@@ -89,6 +89,38 @@
     }
 }
 
+@media screen and (max-width:1025px){
+    /* ---- FICHAS/PRODUCTOS ---- */
+    .accordion-button{
+        font-size: 15px;
+    }
+    .productContainer .accordionAtributos .accordion-body ul li a{
+        font-size: 14px;
+    }
+    .productContainer .accordionAtributos{
+        padding-right: 20px;
+    }
+    .containFichas2 .fichas2{
+        height: 260px;
+        width: 180px;
+        margin: 25px 15px;
+        box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+        -moz-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
+    }
+    .containFichas2 .fichas2 img{
+        height: 180px;
+        height: 160px;
+    }
+    .containFichas2 .fichas2 a{
+        padding: 8px;
+    }
+    .containFichas2 .fichas2 h2{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+}
+
 @media screen and (max-width:991px){
     /* ---- HEADER ---- */
     header .logo a img{
@@ -147,34 +179,6 @@
     }
     .dropdownFalso ul li{
         list-style: none;
-    }
-    /* ---- FICHAS/PRODUCTOS ---- */
-    .accordion-button{
-        font-size: 15px;
-    }
-    .productContainer .accordionAtributos .accordion-body ul li a{
-        font-size: 14px;
-    }
-    .productContainer .accordionAtributos{
-        padding-right: 20px;
-    }
-    .fichas2 {
-        padding: 20px 0px;
-    }
-    .fichas2 div{
-        height: 260px;
-        width: 180px;
-        margin: 25px 15px;
-        box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
-        -webkit-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
-        -moz-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
-    }
-    .fichas2 div img{
-        height: 180px;
-        height: 160px;
-    }
-    .fichas div h2{
-        font-size: 14px;
     }
     /* ----- TITULOS ----- */
     .productitulo{
@@ -272,17 +276,20 @@
         font-size: 38px;
     }
     /* ---- FICHAS---- */
-    .fichas div{
+    .containFichas .fichas{
         height: 300px;
         width: 220px;
     }
-    .fichas div img{
+    .containFichas .fichas img{
         height: 200px;
         width: 100%;
         padding: 10px;
         padding-bottom: 5px;
     }
-    .fichas2 div{
+    .containFichas .fichas a{
+        margin-bottom: 8px;
+    }
+    .containFichas2 .fichas2{
         width: 160px;
         height: 240px;
         margin: 20px 10px;
@@ -290,16 +297,17 @@
         -webkit-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
         -moz-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
     }
-    .fichas2 div img{
+    .containFichas2 .fichas2 img{
         height: 155px;
         padding-bottom: 0px;
     }
-    .fichas2 div h2{
+    .containFichas2 .fichas2 h2{
         font-size: 13px;
-        margin-bottom: 17px;
+        padding-top: 3px;
     }
-    .fichas2 div a{
+    .containFichas2 .fichas2 a{
         padding: 6px 7px;
+        margin-bottom: 6px;
     }
     /*----CONTACTO----*/
     .contacto{
@@ -509,13 +517,16 @@
         margin: 0px 0px 2px 5px;
     }
     /* ---- FICHAS ---- */
-    .fichas div{
+    .containFichas .fichas{
         height: 280px;
         width: 200px;
         margin: 25px 15px;
     }
-    .fichas div img{
+    .containFichas .fichas img{
         height: 180px;
+    }
+    .containFichas .fichas a{
+        padding: 8px;
     }
     /* FOOTER */
     footer .redesSection{
@@ -752,21 +763,22 @@
     .categorias .categoriasFichas div a img{
         border-radius: 0%;
     }
-    .fichas {
+    .containFichas {
         padding: 20px 0px;
     }
-    .fichas div{
+    .containFichas .fichas{
         height: 260px;
         width: 180px;
         box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
         -webkit-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
         -moz-box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.32);
     }
-    .fichas div img{
+    .containFichas .fichas img{
         height: 160px;
     }
-    .fichas div h2{
+    .containFichas .fichas h2{
         font-size: 14px;
+        padding-top: 5px;
     }
     /* ---- PRODUCTOS---- */
     .navProducts nav{
@@ -874,7 +886,7 @@
         padding-left: 10px;
     }
     /* ---- FICHAS ---- */
-    .fichas div{
+    .containFichas .fichas{
         width: 160px;
         height: 240px;
         margin: 20px 10px;
@@ -882,16 +894,17 @@
         -webkit-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
         -moz-box-shadow: 8px 8px 17px 1px rgba(0,0,0,0.32);
     }
-    .fichas div img{
+    .containFichas .fichas img{
         height: 155px;
         padding-bottom: 0px;
     }
-    .fichas div h2{
+    .containFichas .fichas h2{
         font-size: 13px;
-        margin-bottom: 17px;
+        padding-top: 3px;
     }
-    .fichas div a{
+    .containFichas .fichas a{
         padding: 6px 7px;
+        margin-bottom: 6px;
     }
     /* ---- REGISTRO ---- */
     .datosPer form div input{

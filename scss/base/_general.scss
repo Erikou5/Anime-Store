@@ -64,9 +64,12 @@ body{
 
 //FICHAS----------
 
-.fichas{
+.containFichas{
     @extend %fichas-container;
-    div{
+    padding: 20px;
+    .fichas{
+        @include display(flex,space-between,center);
+        flex-direction: column;
         height: 350px;
         width: 250px;
         margin: 30px;
@@ -80,9 +83,9 @@ body{
             font-style: italic;
             font-weight: bold;
             color: nth($color-letras,3);
-            margin-bottom: 25px;
             padding-left: 10px;
             padding-right: 10px;
+            margin: 0px;
         }
         a{
             text-decoration: none;
@@ -91,6 +94,7 @@ body{
             padding: 10px;
             font-size: 15px ;
             transition: 0.3s;
+            margin-bottom: 10px;
             &:hover{
                 border-radius: 10px;
                 background-color:$buy-hover;
@@ -106,12 +110,15 @@ body{
     }
 }
 
-.fichas2{
+.containFichas2{
     @extend %fichas-container;
-    div{
+    padding: 20px 0px;
+    .fichas2{
+        @include display(flex,space-between,center);
+        flex-direction: column;
         height: 300px;
         width: 220px;
-        margin: 30px;
+        margin: 30px 20px;
         border: 2px solid $fichas-border;
         border-radius: 15px;
         box-shadow: 15px 15px 17px 1px rgba(0,0,0,0.32);
@@ -122,9 +129,9 @@ body{
             font-style: italic;
             font-weight: bold;
             color: nth($color-letras,3);
-            margin-bottom: 25px;
             padding-left: 10px;
             padding-right: 10px;
+            margin: 0px;
         }
         img{
             height: 200px;
@@ -138,6 +145,7 @@ body{
             background-color: $color-prin;
             color: nth($color-letras,1);
             padding: 10px;
+            margin-bottom: 8px;
             font-size: 15px ;
             transition: 0.3s;
             &:hover{
