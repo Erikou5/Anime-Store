@@ -158,13 +158,13 @@ body{
 // ------- IR ARRIBA---------
 
 .goHead{
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     display: flex;
     justify-content: center;
     position: fixed;
-    bottom: 12px;
-    right: 3px;
+    bottom: 5px;
+    right: 1px;
     opacity: 0.5;
     &:hover{
         opacity: 0.8;

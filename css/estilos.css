@@ -144,13 +144,13 @@ body {
         background-color: #413ce1; }
 
 .goHead {
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 12px;
-  right: 3px;
+  bottom: 5px;
+  right: 1px;
   opacity: 0.5; }
   .goHead:hover {
     opacity: 0.8; }
@@ -337,7 +337,7 @@ header {
         position: absolute;
         bottom: 0;
         font-size: 50px;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         font-style: italic;
         margin-left: 13px; }
       .categorias .categoriasFichas div a img {
@@ -377,7 +377,8 @@ header {
 
 .productContainer {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
   .productContainer .accordionAtributos {
     width: 280px;
     height: 150px;
@@ -988,7 +989,7 @@ footer {
   footer .redesSection h3 {
     font-size: 20px; } }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 725px) {
   /* ----Hero---- */
   .containHero .hero {
     width: 98%; }
@@ -1067,7 +1068,7 @@ footer {
     font-size: 21px;
     justify-content: flex-start; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
   /*----HEADER----*/
   header .logo a {
     font-size: 30px; }
