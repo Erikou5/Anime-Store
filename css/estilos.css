@@ -1081,15 +1081,14 @@ footer {
   .productContainer {
     flex-direction: column; }
   .navProducts {
-    margin-bottom: 10px;
-    top: 2px; }
+    margin-bottom: 10px; }
   .productContainer .accordionAtributos {
     width: 100%;
     height: 70px;
     padding: 20px 50px;
     padding-top: 10px;
     margin: 0px;
-    top: 52px; }
+    top: 49px; }
   .accordion-item:last-of-type .accordion-button.collapsed {
     width: 100%; }
   .accordion-button {
@@ -1224,7 +1223,8 @@ footer {
     width: auto; }
   /* ---- CARRUSEL ---- */
   .carrusel img {
-    height: 180px; }
+    height: 180px;
+    opacity: 1; }
   .carousel-item .d-none {
     display: none !important; }
   .carousel-indicators {
@@ -1268,15 +1268,18 @@ footer {
   .productContainer .accordionAtributos .accordion-body ul li a {
     font-size: 13px; }
   .productContainer .stickyJuegos {
-    top: 87px; }
+    top: 86px; }
   /* ---- REGISTRO ---- */
   .registMain .regisText {
     font-size: 12px;
     padding-top: 30px; }
   /* ----FOOTER---- */
+  .footerSinFlecha {
+    padding-bottom: 8px; }
+  .footerConFlecha {
+    padding-bottom: 25px; }
   footer {
-    flex-direction: column;
-    padding-bottom: 30px; }
+    flex-direction: column; }
   footer .footerLogo {
     width: 100vw;
     align-items: normal; }
@@ -1362,9 +1365,9 @@ footer {
   .navProducts nav {
     padding: 3px 0px 5px 0px; }
   .productContainer .stickyFiguras {
-    top: 44px; }
+    top: 42px; }
   .productContainer .stickyJuegos {
-    top: 79px; }
+    top: 78px; }
   /* ---- CARRUSEL ---- */
   .carrusel {
     padding: 5px 5px 0px 5px; }
@@ -1394,13 +1397,15 @@ footer {
     width: 100%; }
   .productContainer .accordionAtributos .accordion-body ul li a {
     font-size: 12px; }
+  .productContainer .accordionAtributos .accordion-body ul {
+    padding-left: 30px; }
   .productContainer .accordionAtributos {
     padding: 10px 40px;
     height: 50px; }
   .productContainer .stickyFiguras {
-    top: 81px; }
+    top: 79px; }
   .productContainer .stickyJuegos {
-    top: 81px; } }
+    top: 80px; } }
 
 @media screen and (max-width: 420px) {
   /* ----HEADER---- */
