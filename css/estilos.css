@@ -150,7 +150,7 @@ body {
   justify-content: center;
   position: fixed;
   bottom: 5px;
-  right: 1px;
+  right: 2px;
   opacity: 0.5; }
   .goHead:hover {
     opacity: 0.8; }
@@ -158,6 +158,32 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain; }
+
+.carrusel {
+  background-color: black;
+  padding: 8px 8px 0px 8px;
+  text-shadow: 3px 3px black; }
+  .carrusel h5 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'TheGoodMonolith', sans-serif; }
+  .carrusel p {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'TheGoodMonolith', sans-serif; }
+  .carrusel img {
+    height: 330px;
+    object-fit: cover;
+    opacity: 0.9;
+    align-self: center; }
+  .carrusel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .carrusel .carruselBoton {
+    opacity: 0.7;
+    transition: 0.2s;
+    width: 5%; }
+    .carrusel .carruselBoton:hover {
+      opacity: 1; }
 
 /* -------------- HEADER ---------------- */
 header {
@@ -404,11 +430,11 @@ header {
 /*--------------- CONTACTO -------------*/
 .contacto {
   margin-top: 50px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 100px; }
+  flex-wrap: wrap; }
   .contacto div h3 {
     margin-bottom: 50px;
     font-size: 18.72px; }
@@ -655,7 +681,8 @@ footer {
   justify-content: space-between;
   padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  border-top: 10px black solid; }
+  border-top: 10px black solid;
+  padding-bottom: 10px; }
   footer .footerLogo {
     display: flex; }
     footer .footerLogo img {
@@ -673,14 +700,14 @@ footer {
         font-family: 'TheGoodMonolith', sans-serif; }
       footer .footerLogo .textoLogo a {
         font-style: italic;
-        color: whitesmoke;
-        font-size: 30px;
+        color: white;
+        font-size: 25px;
         margin-top: 40px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: 'Silkscreen', sans-serif;
+        transition: 0.4s; }
         footer .footerLogo .textoLogo a:hover {
-          font-family: 'Silkscreen', sans-serif;
-          font-size: 25px;
-          color: white; }
+          color: black;
+          text-shadow: 1px 1px white; }
   footer .redesSection {
     padding-right: 20px;
     padding-bottom: 20px;
@@ -739,7 +766,14 @@ footer {
   /* ---- REGISTRO ---- */
   .registMain .registro {
     padding: 20px 0px;
-    gap: 15px; } }
+    gap: 15px; }
+  /* ---- CARRUSEL ---- */
+  .carrusel img {
+    height: 250px; }
+  .carrusel h5 {
+    font-size: 25px; }
+  .carrusel p {
+    font-size: 20px; } }
 
 @media screen and (max-width: 1150px) {
   /* ----Hero---- */
@@ -774,8 +808,14 @@ footer {
   .pref div h4 {
     margin-bottom: 20px; }
   /* ----FOOTER--- */
+  footer {
+    padding-bottom: 25px; }
+  footer .footerLogo {
+    align-items: center; }
   footer .footerLogo .textoLogo h2 {
     font-size: 27px; }
+  footer .footerLogo .textoLogo a {
+    font-size: 22px; }
   footer .footerLogo img {
     width: 140px;
     height: 140px; }
@@ -854,7 +894,10 @@ footer {
     list-style: none; }
   /* ----- TITULOS ----- */
   .productitulo {
-    display: none; } }
+    display: none; }
+  /* ----- PRODUCTOS ------ */
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    width: 163.71px; } }
 
 @media screen and (max-width: 950px) {
   /* ---- REGISTRO ---- */
@@ -879,7 +922,16 @@ footer {
     margin: 0px 50px; }
   .botonRegistro {
     display: flex;
-    align-items: center; } }
+    align-items: center; }
+  /* ---- CARRUSEL ---- */
+  .carrusel {
+    text-shadow: 2px 2px black; }
+  .carrusel img {
+    height: 200px; }
+  .carrusel h5 {
+    font-size: 20px; }
+  .carrusel p {
+    font-size: 17px; } }
 
 @media screen and (max-width: 900px) {
   /* ----Hero---- */
@@ -973,21 +1025,30 @@ footer {
   .botonRegistro {
     justify-content: center; }
   /* ----FOOTER---- */
+  footer {
+    padding-bottom: 10px; }
   footer .footerLogo .textoLogo h2 {
     font-size: 22.5px; }
   footer .footerLogo {
-    width: 40%; }
+    width: 40%;
+    align-items: normal; }
   footer .footerLogo .textoLogo a {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px; }
-  footer .footerLogo .textoLogo a:hover {
-    font-size: 20px; }
   footer .redesSection div a {
     font-size: 16px; }
   footer .redesSection {
     width: 40%; }
   footer .redesSection h3 {
     font-size: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .carousel-item .d-none {
+    display: initial !important; }
+  .carrusel h5 {
+    font-size: 18px; }
+  .carrusel p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 725px) {
   /* ----Hero---- */
@@ -1026,6 +1087,8 @@ footer {
     padding-top: 10px;
     margin: 0px;
     top: 52px; }
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    width: 100%; }
   .accordion-button {
     padding: 7px;
     padding-left: 15px; }
@@ -1060,13 +1123,18 @@ footer {
   footer {
     padding-top: 20px; }
   footer .footerLogo {
-    width: 50%; }
+    width: 50%;
+    align-items: center; }
   footer .footerLogo img {
     width: 130px;
     height: 130px; }
   footer .footerLogo .textoLogo h2 {
     font-size: 21px;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  footer .footerLogo .textoLogo a {
+    font-size: 18px; }
+  footer .footerLogo .textoLogo a:hover {
+    text-shadow: none; } }
 
 @media screen and (max-width: 605px) {
   /*----HEADER----*/
@@ -1150,7 +1218,12 @@ footer {
     width: 250px;
     justify-content: space-evenly; }
   .checkContainePref {
-    width: auto; } }
+    width: auto; }
+  /* ---- CARRUSEL ---- */
+  .carrusel img {
+    height: 180px; }
+  .carousel-item .d-none {
+    display: none !important; } }
 
 @media screen and (max-width: 555px) {
   /* ----Hero---- */
@@ -1197,19 +1270,16 @@ footer {
     padding-top: 30px; }
   /* ----FOOTER---- */
   footer {
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 30px; }
   footer .footerLogo {
-    width: 100vw; }
-  footer .footerLogo .textoLogo a {
-    font-size: 22px; }
-  footer .footerLogo .textoLogo a:hover {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px; }
+    width: 100vw;
+    align-items: normal; }
   footer .footerLogo img {
     width: 120px;
     height: 120px; }
   footer .redesSection {
-    padding-right: 7px;
+    padding-right: 10px;
     padding-left: 20px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1290,6 +1360,9 @@ footer {
     top: 44px; }
   .productContainer .stickyJuegos {
     top: 79px; }
+  /* ---- CARRUSEL ---- */
+  .carrusel {
+    padding: 8px 5px 0px 5px; }
   /* ----FOOTER---- */
   footer .redesSection h3 {
     text-align: start;
@@ -1391,13 +1464,11 @@ footer {
     width: 180px; }
   .usuario form .user {
     margin-right: 10px; }
+  /* ---- CARRUSEL ---- */
+  .carrusel img {
+    height: 160px; }
   /* ----FOOTER---- */
   footer .footerLogo .textoLogo h2 {
     font-size: 18px; }
-  footer .footerLogo .textoLogo a {
-    font-size: 19px; }
-  footer .footerLogo .textoLogo a:hover {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px; }
   .redesSection h3 {
     margin-left: 15px; } }

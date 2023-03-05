@@ -28,6 +28,16 @@
         padding: 20px 0px;
         gap: 15px;
     }
+    /* ---- CARRUSEL ---- */
+    .carrusel img{
+        height: 250px;
+    }
+    .carrusel h5{
+        font-size: 25px;
+    }
+    .carrusel p{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1150px){
@@ -74,8 +84,17 @@
         margin-bottom: 20px;
     }
     /* ----FOOTER--- */
+    footer{
+        padding-bottom: 25px;
+    }
+    footer .footerLogo{
+        align-items: center;
+    }
     footer .footerLogo .textoLogo h2{
         font-size: 27px;
+    }
+    footer .footerLogo .textoLogo a{
+        font-size: 22px;
     }
     footer .footerLogo img{
         width: 140px;
@@ -184,6 +203,10 @@
     .productitulo{
         display: none;
     }
+    /* ----- PRODUCTOS ------ */
+    .accordion-item:last-of-type .accordion-button.collapsed{
+        width: 163.71px;
+    }
 } 
 
 @media screen and (max-width:950px){
@@ -219,6 +242,19 @@
     .botonRegistro{
         display: flex;
         align-items: center;
+    }
+    /* ---- CARRUSEL ---- */
+    .carrusel{
+        text-shadow: 2px 2px black;
+    }
+    .carrusel img{
+        height: 200px;
+    }
+    .carrusel h5{
+        font-size: 20px;
+    }
+    .carrusel p{
+        font-size: 17px;
     }
 }
 
@@ -348,18 +384,19 @@
         justify-content: center;
     }
     /* ----FOOTER---- */
+    footer{
+        padding-bottom: 10px;
+    }
     footer .footerLogo .textoLogo h2{
         font-size: 22.5px;
     }
     footer .footerLogo{
         width: 40%;
+        align-items: normal;
     }
     footer .footerLogo .textoLogo a{
-        font-size: 25px;
-        margin-top: 30px;
-    }
-    footer .footerLogo .textoLogo a:hover{
         font-size: 20px;
+        margin-top: 30px;
     }
     footer .redesSection div a{
         font-size: 16px;
@@ -369,6 +406,17 @@
     }
     footer .redesSection h3{
         font-size: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    .carousel-item .d-none{
+        display: initial !important;
+    }
+    .carrusel h5{
+        font-size: 18px;
+    }
+    .carrusel p{
+        font-size: 15px;
     }
 }
 
@@ -420,6 +468,9 @@
         margin: 0px;
         top: 52px;
     }
+    .accordion-item:last-of-type .accordion-button.collapsed{
+        width: 100%;
+    }
     .accordion-button{
         padding: 7px;
         padding-left: 15px;
@@ -467,6 +518,7 @@
     }
     footer .footerLogo{
         width: 50%;
+        align-items: center;
     }
     footer .footerLogo img{
         width: 130px;
@@ -475,6 +527,12 @@
     footer .footerLogo .textoLogo h2{
         font-size: 21px;
         justify-content: flex-start;
+    }
+    footer .footerLogo .textoLogo a{
+        font-size: 18px;
+    }
+    footer .footerLogo .textoLogo a:hover{
+        text-shadow: none;
     }
 }
 
@@ -598,6 +656,13 @@
     .checkContainePref{
         width: auto;
     }
+    /* ---- CARRUSEL ---- */
+    .carrusel img{
+        height: 180px;
+    }
+    .carousel-item .d-none{
+        display: none !important;
+    }
 }
 
 @media screen and (max-width:555px) {
@@ -662,23 +727,18 @@
     /* ----FOOTER---- */
     footer{
         flex-direction: column;
+        padding-bottom: 30px;
     }
     footer .footerLogo{
         width: 100vw;
-    }
-    footer .footerLogo .textoLogo a{
-        font-size: 22px;
-    }
-    footer .footerLogo .textoLogo a:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 22px;
+        align-items: normal;
     }
     footer .footerLogo img{
         width: 120px;
         height: 120px;
     }
     footer .redesSection{
-        padding-right: 7px;
+        padding-right: 10px;
         padding-left: 20px;
         margin-left: 0px;
         margin-right: 0px;
@@ -700,6 +760,7 @@
         margin-left: 50px;
     }
 }
+
 @media screen and (max-width:510px){
     /* ----HEADER---- */
     header .logo a{
@@ -789,6 +850,10 @@
     }
     .productContainer .stickyJuegos{
         top: 79px;
+    }
+    /* ---- CARRUSEL ---- */
+    .carrusel{
+        padding: 8px 5px 0px 5px;
     }
     /* ----FOOTER---- */
     footer .redesSection h3{
@@ -925,16 +990,13 @@
     .usuario form .user{
         margin-right: 10px;
     }
+    /* ---- CARRUSEL ---- */
+    .carrusel img{
+        height: 160px;
+    }
     /* ----FOOTER---- */
     footer .footerLogo .textoLogo h2{
         font-size: 18px;
-    }
-    footer .footerLogo .textoLogo a{
-        font-size: 19px;
-    }
-    footer .footerLogo .textoLogo a:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 19px;
     }
     .redesSection h3{
         margin-left: 15px;
