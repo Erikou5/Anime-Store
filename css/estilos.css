@@ -1043,12 +1043,15 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 767px) {
+  /* ---- CARRUSEL ---- */
   .carousel-item .d-none {
     display: initial !important; }
   .carrusel h5 {
     font-size: 18px; }
   .carrusel p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .carrusel .carruselBoton {
+    width: 10%; } }
 
 @media screen and (max-width: 725px) {
   /* ----Hero---- */
@@ -1223,7 +1226,9 @@ footer {
   .carrusel img {
     height: 180px; }
   .carousel-item .d-none {
-    display: none !important; } }
+    display: none !important; }
+  .carousel-indicators {
+    margin-bottom: 3px; } }
 
 @media screen and (max-width: 555px) {
   /* ----Hero---- */
@@ -1362,7 +1367,7 @@ footer {
     top: 79px; }
   /* ---- CARRUSEL ---- */
   .carrusel {
-    padding: 8px 5px 0px 5px; }
+    padding: 5px 5px 0px 5px; }
   /* ----FOOTER---- */
   footer .redesSection h3 {
     text-align: start;
@@ -1467,6 +1472,8 @@ footer {
   /* ---- CARRUSEL ---- */
   .carrusel img {
     height: 160px; }
+  .carrusel .carruselBoton {
+    width: 15%; }
   /* ----FOOTER---- */
   footer .footerLogo .textoLogo h2 {
     font-size: 18px; }
